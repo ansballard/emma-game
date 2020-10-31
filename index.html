@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emma Game</title>
+  <style>
+    .blue-text {
+      color: blue;
+    }
+    .blue {
+      background-color: blue;
+    }
+    .green {
+      background-color: green;
+    }
+    .shape {
+      width: 100px;
+      height: 100px;
+      transition: transform 0.3s ease;
+      transform: translateX(0) rotate(0deg);
+    }
+    .circle {
+      border-radius: 50%;
+    }
+    .square {
+
+    }
+    .shift-right {
+      transform: translateX(100px);
+    }
+    .spin-right {
+      transform: rotate(90deg)
+    }
+    button {
+      font-size: 20px;
+      padding: 7px 10px;
+      border-radius: 3px;
+      background: none;
+      box-shadow: none;
+    }
+  </style>
+  <script>
+    function moveRight(type) {
+      const shapes = document.querySelectorAll(`.${type}`);
+      let i = 0;
+      shapes.forEach(shape => {
+        setTimeout(() => {
+          shape.classList.toggle('shift-right');
+        }, (i++) * 50);
+      })
+    }
+    function spinRight(type) {
+      document.querySelector(`.${type}`).classList.toggle('spin-right');
+    }
+    function moveCircle() {
+      moveRight('circle')
+    }
+    function moveSquare() {
+      moveRight('square')
+    }
+    function spinSquare() {
+      spinRight('square');
+    }
+  </script>
+</head>
+<body>
+  <div class="blue-text">
+    Hello World
+    hjjyhhyjhjjh76j6h7j8jrjjjjjuyijjjij7y6t
+    fgrd45yg7nmbs
+    7hkjyg87guugyi
+  </div>
+  <button onclick="moveCircle(event)">Move that circle, button!</button>
+  <button onclick="moveSquare(event)">Move that square, button!</button>
+  <br />
+  <br />
+  <div id="circle-wrapper">
+    <div class="shape circle blue"></div>
+    <div class="shape circle blue"></div>
+    <div class="shape circle blue"></div>
+    <div class="shape circle blue"></div>
+  </div>
+  <br />
+  <div class="shape square green" onclick="spinSquare()"></div>
+  <script>
+    const circleWrapper = document.getElementById('circle-wrapper');
+    circleWrapper.addEventListener("click", (ev) => {
+      if(ev.target.classList.contains('circle')) {
+        circleWrapper.removeChild(ev.target);
+      }
+      return;
+    });
+  </script>
+</body>
+</html>
