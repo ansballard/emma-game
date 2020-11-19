@@ -1,0 +1,39 @@
+.blue-text {
+  color: blue;
+}
+.blue {
+  background-color: blue;
+}
+.green {
+  background-color: green;
+}
+.shape {
+  width: 100px;
+  height: 100px;
+  transition: transform 0.3s ease;
+  transform: translateX(0) rotate(0deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle {
+  border-radius: 50%;
+}
+.square {
+}
+.shift-right {
+  transform: translateX(100px);
+}
+.spin-right {
+  transform: rotate(90deg);
+}
+.shift-right.spin-right {
+  transform: rotate(90deg) translateY(-100px);
+}
+button {
+  font-size: 20px;
+  padding: 7px 10px;
+  border-radius: 3px;
+  background: none;
+  box-shadow: none;
+}

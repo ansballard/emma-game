@@ -1,0 +1,29 @@
+{
+  "name": "emma-game",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node cli.mjs -mn",
+    "watch": "node cli.mjs -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ansballard/emma-game.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ansballard/emma-game/issues"
+  },
+  "homepage": "https://github.com/ansballard/emma-game#readme",
+  "devDependencies": {
+    "chokidar": "^3.4.3",
+    "colorette": "^1.2.1",
+    "esbuild": "^0.8.9",
+    "mri": "^1.1.6",
+    "preact": "^10.5.7"
+  }
+}
