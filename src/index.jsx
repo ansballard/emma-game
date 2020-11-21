@@ -3,6 +3,8 @@ import "./index.css";
 import { h, Fragment, render } from "preact";
 import { useState } from "preact/hooks";
 
+import { Fish } from "./fish.jsx";
+
 const Root = () => {
   const [circles, setCircles] = useState([{
     shiftRight: false,
@@ -59,6 +61,7 @@ const Root = () => {
     <br />
     <textarea style="width: 100vw; height: 100px;"></textarea>
     <br />
+    <Fish />
     <br />
     <div id="circle-wrapper">
       {

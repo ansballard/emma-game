@@ -5,8 +5,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "node cli.mjs -mn",
-    "watch": "node cli.mjs -w"
+    "build": "node cli.mjs -mn src/index.jsx",
+    "watch": "node cli.mjs -sw src/index.jsx"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,7 @@
     "colorette": "^1.2.1",
     "esbuild": "^0.8.9",
     "mri": "^1.1.6",
-    "preact": "^10.5.7"
+    "preact": "^10.5.7",
+    "serve-handler": "^6.1.3"
   }
 }
