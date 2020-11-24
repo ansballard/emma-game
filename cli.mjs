@@ -6,7 +6,7 @@ import mri from "mri";
 import serveHandler from "serve-handler";
 import { gray, red, green, yellow, cyan, blue } from "colorette";
 
-import { blowfish, tinyLittleFish } from "./emojis.mjs";
+import { blowfish, tinyLittleFish } from "./src/emojis.mjs";
 
 const { watch, serve, public: rawPublic, port, verbose: _verbose, nomodule, minify, _: entryPoints } = mri(process.argv.slice(2), {
   alias: {

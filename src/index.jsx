@@ -4,6 +4,7 @@ import { h, Fragment, render } from "preact";
 import { useState } from "preact/hooks";
 
 import { Fish } from "./fish.jsx";
+import { blueFish } from "./emojis.mjs";
 
 const Root = () => {
   const [circles, setCircles] = useState([{
@@ -61,7 +62,7 @@ const Root = () => {
     <br />
     <textarea style="width: 100vw; height: 100px;"></textarea>
     <br />
-    <Fish />
+    <Fish>{blueFish}</Fish>
     <br />
     <div id="circle-wrapper">
       {
