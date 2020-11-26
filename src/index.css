@@ -1,3 +1,6 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
 .blue-text {
   color: blue;
 }
@@ -36,4 +39,14 @@ button {
   border-radius: 3px;
   background: none;
   box-shadow: none;
+}
+textarea {
+  font-size: 60px;
+}
+.floaty-fish {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 60px;
+  z-index: 1;
 }

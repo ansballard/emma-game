@@ -94,7 +94,7 @@ async function build({ service, path }) {
       await build({ service, path });
     } catch (e) {
       console.error(red(`Failed to rebuild after ${path} change`));
-      console.error(e);
+      _verbose && console.error(e);
     }
   });
 })();

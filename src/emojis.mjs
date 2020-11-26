@@ -5,3 +5,4 @@ export const shell = "🍥";
 export const blowfish = "🐡";
 export const shark = "🦈";
 export const otter = "🦦";
+export const turkey = "🦃";
