@@ -22,9 +22,13 @@
   "devDependencies": {
     "chokidar": "^3.4.3",
     "colorette": "^1.2.1",
-    "esbuild": "^0.8.9",
+    "esbuild": "^0.8.16",
     "mri": "^1.1.6",
     "preact": "^10.5.7",
     "serve-handler": "^6.1.3"
+  },
+  "dependencies": {
+    "prismjs": "^1.22.0",
+    "snarkdown": "^2.0.0"
   }
 }

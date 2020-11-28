@@ -50,7 +50,10 @@ const esbuildOptions = {
   sourcemap: true,
   jsxFactory: "h",
   jsxFragment: "Fragment",
-  // loader: "jsx",
+  incremental: !!watch,
+  loader: {
+    ".md": "text",
+  },
 };
 async function build({ service, path }) {
   const hr = process.hrtime();

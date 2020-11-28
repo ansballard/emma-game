@@ -5,6 +5,9 @@ import { useState } from "preact/hooks";
 
 import { Fish } from "./fish.jsx";
 import { turkey } from "./emojis.mjs";
+import Markdown from "./Markdown.jsx";
+
+import test from "./testing.md";
 
 const Root = () => {
   const [circles, setCircles] = useState([{
@@ -72,6 +75,7 @@ const Root = () => {
       }
     </div>
     <br />
+    <Markdown content={test} />
     <div class={`shape square green${square.spinRight ? " spin-right" : ""}${square.shiftRight ? " shift-right" : ""}`} onClick={spinSquare}></div>
   </>;
 }
